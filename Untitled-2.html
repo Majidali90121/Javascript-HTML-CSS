@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{
+        background-color:#eae0d5;
+        margin:0px;
+    }
+    .center{
+        text-align:center;
+    }
+    .pagin{
+        display:inline block;
+    }
+    .pagin a:not(.actie){
+        margin: 0px 3px;
+        border: 1px solid gray; 
+        padding: 14px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        transition: 0.2s ease;
+ 
+    }
+    .pagin a:hover:not(.actie){
+        background:blue;
+        border-radius: 15px;
+    }
+    .pagin a:first-child{
+        border-radius: 6px;
+    }
+    .pagin a:last-child{
+        border-radius:6px;
+    }
+   .actie{
+    background-color:blue;
+    border-radius: 15px;
+    padding:14px;
+    margin: 0 3px;
+    border: 1px solid gray; 
+   }
+    .cen{
+        top:100%;
+        left:50%;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        text-align: center;
+        transform: translate(-50%,40%);
+        background-color:black;
+        color:aliceblue;
+        height: 400px;
+        width: 500px;
+       
+    }
+    input[type=text]{
+        background-color:antiquewhite;
+        color:black;
+        transition: 0.2s;
+        border: 1px solid blue;
+        width: 200px;
+        animation-name: example;
+        animation-duration:3s ;
+        animation-timing-function: ease-out;
+    }
+    input[type=text]:hover{
+        background: blue;
+    }
+    @keyframes example{
+        0% {right:-25%;opacity:0;position: absolute;transform:translatex(-25%)}
+        100%{right:35%;opacity:1;position: absolute;transform:translate(30%)}
+    }
+    input[type=password]{
+        background-color:antiquewhite;
+        color:black;
+        width: 200px;
+        transition: 0.2s;
+        animation-name: m;
+        border: 1px solid blue;
+        animation-duration:4s ;
+        animation-timing-function: ease-out;
+    }
+    input[type=password]:hover{
+        background:blue;
+        
+    }
+    @keyframes m{
+        0% {right:-20%;opacity:0;position: absolute;transform:translatex(-25%)}
+       50% {right:-25%;opacity:0;transform:translatex(-25%);position:absolute;}
+        100%{right:35%;opacity:1;position: absolute;transform:translate(30%)}
+    }
+    
+    button{
+        border: 2px solid blue;
+        border-radius: 50px;
+        width:100px;
+        display:inline-block;
+        height:40px;
+        cursor:pointer;
+        position:relative;
+        transition: all 0.5s;
+    }
+    button:hover{
+        background-color: blue;
+    }
+    span{
+        display:inline-block;
+        position:relative;
+        transition:0.5s;
+    }
+    span::after{
+        content:"\00bb";
+        position:absolute;
+        right:-39px;
+        opacity:0;
+      
+    }
+    button:hover span{
+        padding-right:25px;
+    }
+    button:hover span:after{
+        right:0;
+        opacity:1;
+    }
+    ul{
+        width:100%;
+        padding:0px;
+        margin:1px;
+        list-style-type: none;
+        float:left;
+        background-color:#000000;
+    }
+    li{
+        float:left;
+        color:white;
+        background-color:#000000;
+        padding:17px;
+        margin-left:4px;
+        text-decoration:none;
+    }
+    a{
+        color:white;
+        margin-left:5px;
+        text-decoration:none;
+        font-weight: bold;
+    }
+    li:hover{
+        background-color:#bbbb;
+    }
+    li:hover a{
+        color:#aaaa;
+    }
+    .active{
+        background-color: #bbbb;
+        color:#aaaa;
+    }
+    .ac{
+        color:  #aaaa;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="active"><a class="ac" href="#">Log in</a></li>
+    </ul>
+    <div class="cen">
+    <form action="abtion.php">
+        <br>
+        <br>
+        <h1>Enter your login information</h1><br>
+        <label for="Fname" style="top:60px">Enter your number or E-mail</label><br>
+        <input type="text"><br>
+         <label for="Password"><br>
+            Enter your password 
+         </label><br>
+         <input type="password"><br>
+         <br>
+         <button><span>submit</span></button><br>
+    </form>
+    <br>
+    <br>
+
+    <div class="center">
+    <div class="pagin">
+        <a href="#">&laquo;</a><a class="actie" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">&raquo;</a>
+    </div></div>
+</div>
+</body>
+</html>

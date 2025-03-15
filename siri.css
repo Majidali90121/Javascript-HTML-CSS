@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    background-color: black;
+}
+.mi{
+    border: 2px solid #aaaa;
+    background-color: #aaaa;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+}
+.lu{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.il{
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+.a{
+    text-decoration: none;
+    color: white;
+}
+.il:hover{
+    background-color: #cccc;
+}
+.active{
+    background-color: red;
+}
+body{
+    margin: 0px;
+    margin-top: 0px;
+}
+.m{
+    font-family:'poppins' , sans-serif;
+    right: 0px;
+    width: 75%;
+    background-color: red;
+    height: 800px;
+    position: absolute;
+    margin-top: 0px;
+}
+.c{
+    background-color: #aaaa ;
+    padding: 100px 100px;
+    border: 20px solid yellow;
+    outline: 20px solid black;
+    margin: 120px 50px;
+    box-shadow: 50px 25px 32px 50px rgba(0,0,0,0.5);
+}
+input[type="text"]{
+    font-family:'poppins' , sans-serif;
+    background-color: green;
+    color: yellow;
+    border-radius: 14px;
+    height: 0px;
+    width: 190px;
+    transition: height 0.5s ease-in-out
+}
+input[type="text"]:focus{
+    height: 29px;
+
+
+}
+input[type="E-mail"]{
+    font-family:'poppins' , sans-serif;
+    background-color: green;
+    color: yellow;
+    height: 0px;
+    width: 190px;
+    border-radius: 14px;
+    transition: height 0.5s ease-in-out
+}
+input[type="E-mail"]:focus{
+    height: 29px;
+
+}
+select{
+    font-family:'poppins' , sans-serif;
+    background-color: yellow;
+    color: green;
+    border-radius: 14px;
+    width: 190px;
+    height: 0px;
+    transition: height 0.7s ease-in-out;
+}
+select:focus{
+    font-family:'poppins' , sans-serif;
+    height:29px;
+}
+input[type="Submit"]{
+    font-family:'poppins' , sans-serif;
+    background-color: green;
+    color: yellow;
+
+    cursor: pointer;
+    border-radius: 14px;
+width: 80px;
+height: 40px;
+
+}h1{
+    font-family:'poppins' , sans-serif;
+    text-align: center;
+    border: 10px solid yellow;
+    outline: 10px solid black;
+    margin-left: 210px;
+    margin-right: 190px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 0px 8px 0px rgba(0,0,0,0.3);
+    color:  yellow;
+}
+input[type="submit"]:hover{
+    font-family:'poppins' , sans-serif;
+    background-color: yellow;
+    color: black;
+
+}
+form{
+    font-family:'poppins' , sans-serif;
+    margin: 20px 190px;
+}
+input[type="password"]{
+    border-radius: 14px;
+    background-color: green;
+    width:190px;
+    height: 0px;
+    transition: 0.4s ease-in-out;
+}
+input[type="password"]:focus{
+    height:29px;
+}
