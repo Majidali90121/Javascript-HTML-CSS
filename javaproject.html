@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function mydisplay(){
+    let a,b,c,d,r;
+    a=3;
+    b=4;
+    c=6;
+    d=8;
+    r=(a-b)*(a+b)+(c-d)*(c+d);
+    console.log("Function is runing");
+    console.log("result: ",r);
+    document.getElementById('a').innerHTML = "The squaree distance between the points: ("+a+" , "+b+") and ("+c+" , "+d+") is: "+r;
+
+    }
+    </script>
+      <button type="button" onclick="mydisplay()">Try for your self</button>
+      <P id="a"></P>
+      <script>
+        function myfunction(){
+            let item1=12.95,item2=24.95,item3=6.95,item4=14.95,item5=3.95,subtotal,tax,total;
+            document.getElementById('c').innerHTML="price of item1: "+item1;
+            document.getElementById('b').innerHTML="price of item2: "+item2;
+            document.getElementById('d').innerHTML="price of item3: "+item3;
+            document.getElementById('e').innerHTML="price of item4: "+item4;
+            document.getElementById('f').innerHTML="price of item5: "+item5;
+            subtotal=item1+item2+item3+item4+item5;
+            document.getElementById('g').innerHTML="Subtotal: "+subtotal;
+            tax=subtotal*0.6;
+            document.getElementById('h').innerHTML="Tax: "+tax;
+            total=tax+subtotal;
+            document.getElementById('i').innerHTML="price of item1: "+total;
+            let a,b;
+            a=56;
+            b=1.77;
+            document.getElementById('j').innerHTML="price of item1: "+a/(b*b);
+        }
+      </script>
+      <button type="button"onclick="myfunction()">Try another</button>
+      <p id="c"></p>
+      <p id="b"></p>
+      <p id="d"></p>
+      <p id="e"></p>
+      <p id="f"></p>
+      <p id="g"></p>
+      <p id="h"></p>
+      <p id="i"></p>
+      <p id="j"></p>
+  
+    
+</body>
+</html>
